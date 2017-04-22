@@ -1,9 +1,7 @@
 <template>
   <div>
     <vHeader></vHeader>
-    <div v-for="x in data">
-      {{ x }}
-    </div>
+    index
     <vFooter></vFooter>
   </div>
 </template>
@@ -14,23 +12,7 @@
 
   export default {
     name: 'index',
-    components: {vHeader, vFooter},
-    created: function () {
-      var _this = this;
-      this.$http.get('/api')
-        .then(function (res) {
-            console.log(res.data.array)
-          _this.data = res.data.array
-        })
-        .catch(function (error) {
-          console.log(error);
-        });
-    },
-    data(){
-      return {
-        data: null
-      }
-    }
+    components: {vHeader, vFooter}
   }
 </script>
 
