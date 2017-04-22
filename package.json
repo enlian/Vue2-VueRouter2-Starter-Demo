@@ -1,7 +1,7 @@
 {
-  "name": "vue2-blog",
+  "name": "vue-cli-demo",
   "version": "1.0.0",
-  "description": "vue2-blog",
+  "description": "vue2 + vue-router2 DEMO",
   "author": "song <651754835@qq.com>",
   "private": true,
   "scripts": {
@@ -14,9 +14,7 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
   "dependencies": {
-    "axios": "^0.16.1",
     "express": "^4.15.2",
-    "mockjs": "^1.0.1-beta3",
     "vue": "^2.2.6",
     "vue-router": "^2.3.1"
   },
