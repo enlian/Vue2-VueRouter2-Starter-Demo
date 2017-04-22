@@ -35,4 +35,4 @@ npm run e2e
 npm test
 
 持续更新中....
-喜欢的童鞋可以点下like，谢谢!
+喜欢的童鞋可以点下star，谢谢!
