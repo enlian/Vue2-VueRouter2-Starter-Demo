@@ -3,7 +3,7 @@
 
 适合刚学习vue的童鞋，特别适合对官方vue-cli一头雾水的童鞋！
 
-
+![Alt text](https://github.com/enlian/vue-cli-demo/raw/master/Screenshots/1.jpg)
 # 特点：
 
 1.完整的vue-router2路由跳转案例
