@@ -1,38 +1,115 @@
-# vue2 + vue-router2 入门DEMO
-根据vue-cli进行二次开发，加入了自己的案例和注释！
+# Vue2 + Vue-Router2 Starter Demo
 
-适合刚学习vue的童鞋，特别适合对官方vue-cli一头雾水的童鞋！
+This project is built using Vue2 and Vue-Router2, and is based on a modified version of the official Vue CLI. It includes custom examples and comments to help new learners better understand the framework.
 
-![Alt text](https://github.com/enlian/vue-cli-demo/raw/master/Screenshots/1.jpg)
-# 特点：
+**This is especially helpful for beginners who find the official Vue CLI a bit overwhelming.**
 
-1.完整的vue-router2路由跳转案例
+## Features
 
-2.路由支持自定义title，并且支持微信显示，标题支持微信分享
+1. **Complete Vue-Router2 navigation examples**  
+   The project includes detailed examples of how to use Vue-Router2 for navigation and route management.
 
-3.组件已分割好，按照案例写法自己增删组件即可
+2. **Customizable route titles**  
+   Each route supports a custom title, including special support for displaying the title in WeChat and enabling WeChat sharing with custom titles.
 
-4.模块化案例，引入自定义JS
+3. **Pre-split components**  
+   Components have been split out and organized. You can easily add, remove, or modify components based on your own examples.
 
-5.生产资源打包后自动启动HTTP服务并打开浏览器预览生产环境（官方vue-cli仅仅打包了生产资源）
+4. **Modular design**  
+   The project is modular, and custom JavaScript files can be easily imported and used.
 
+5. **Automatic HTTP server on production build**  
+   After building the production files, an HTTP server will automatically start, and the browser will open to preview the production environment (unlike the official Vue CLI which only handles resource bundling).
 
-# 安装
+## Installation
+
+To install the project dependencies, run:
+
+```bash
 npm install
+```
 
-# 运行开发环境
+## Running the Development Environment
+
+To start the development server, run:
+
+```bash
 npm run dev
+```
 
-# 运行生产环境
+This will launch the application in the development environment, with hot-reloading enabled for easier debugging and development.
+
+## Running the Production Environment
+
+To build the application for production and launch an HTTP server, run:
+
+```bash
 npm run build
+```
 
+This will create a production build of the application, start a local HTTP server, and open your browser to preview the production environment.
 
-# 测试
+## Testing
+
+### Unit Testing
+
+To run the unit tests, use the following command:
+
+```bash
 npm run unit
+```
 
+### End-to-End Testing
+
+For end-to-end testing, run:
+
+```bash
 npm run e2e
+```
 
+### Run All Tests
+
+To run both unit and e2e tests, use:
+
+```bash
 npm test
+```
 
-持续更新中....
-喜欢的童鞋可以点下star，谢谢!
+## Project Structure
+
+The project is organized as follows:
+
+- `src/`: Contains the source code for the project, including components, views, router, and custom JavaScript files.
+- `src/components/`: Houses individual Vue components.
+- `src/router/`: Contains the Vue-Router2 setup and route definitions.
+- `src/assets/`: Contains static assets such as images, stylesheets, etc.
+- `public/`: Holds the public-facing files, like `index.html`, which will be served in production.
+- `build/`: Contains configuration files for webpack and other build tools.
+- `test/`: Houses unit and e2e test files.
+
+## Customizing the Router
+
+The project includes a working Vue-Router2 setup with customizable route titles. You can easily modify the route titles by updating the `meta.title` field in each route definition.
+
+Example route definition with custom title:
+
+```js
+{
+  path: '/example',
+  component: ExampleComponent,
+  meta: {
+    title: 'Custom Page Title'
+  }
+}
+```
+
+The title will automatically update based on the current route and will display correctly in WeChat, including when shared.
+
+## Continuous Updates
+
+We are continuously improving and updating this project with more examples and features. If you like the project, feel free to star the repository! Thank you for your support!
+
+---
+
+Enjoy coding with Vue2 + Vue-Router2! 🚀
+
